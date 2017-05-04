@@ -33,4 +33,4 @@ ENV PLUGGABLE_SCM_PROVIDER_PATH="/var/jenkins_home/userContent/job_dsl_additiona
 
 RUN /usr/local/bin/plugins.sh /usr/share/jenkins/ref/plugins.txt
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
